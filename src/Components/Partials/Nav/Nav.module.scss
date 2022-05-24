@@ -1,0 +1,33 @@
+@import '../../../assets/Helpers/mixin';
+@import '../../../assets//Helpers//variabler';
+nav {
+    background-color: rgba(0, 0, 0, 0.758);
+    height: 15vh;
+    margin: -1.6em -0.5em 0 -1em;
+    img {
+        position: absolute;
+        padding: 1.5em;
+        width: 4vw;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        li {
+            display: inline;
+            margin: 0;
+            padding: 1em;
+            padding-top: 3em;
+            a {
+                font-family: $navFont;
+                font-size: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+    }
+}

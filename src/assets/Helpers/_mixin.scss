@@ -1,0 +1,16 @@
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin headers {
+    font-family: $navFont;
+    color: $text;
+    text-align: center;
+    font-size: 2em;
+    &:hover {
+        text-decoration: underline;
+        color: $hover;
+    }
+}

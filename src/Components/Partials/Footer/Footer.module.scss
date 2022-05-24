@@ -1,0 +1,13 @@
+@import '../../../assets/Helpers/mixin';
+@import '../../../assets/Helpers/variabler';
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 -0.5em -1em -0.5em;
+    height: 30vh;
+    background-color: $text;
+    color: #fff;
+    img {
+        width: 5vw;
+    }
+}

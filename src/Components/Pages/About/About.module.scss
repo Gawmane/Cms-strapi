@@ -1,0 +1,5 @@
+@import '../../../assets/Helpers/mixin';
+@import '../../../assets//Helpers//variabler';
+h2 {
+    @include headers();
+}

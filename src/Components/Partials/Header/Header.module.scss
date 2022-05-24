@@ -1,0 +1,31 @@
+@import '../../../assets/Helpers/mixin';
+@import '../../../assets/Helpers/variabler';
+header {
+    background-image: url("../../../assets/images/headerimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0 -0.5em 0 -1em;
+    article {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 50vh;
+        color: #ffff;
+        h1 {
+            font-family: $navFont;
+            font-size: 4em;
+            text-align: center;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: $textFont;
+            font-size: 1.5em;
+        }
+    }
+}
