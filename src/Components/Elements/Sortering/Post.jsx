@@ -1,13 +1,15 @@
+import React from 'react';
+import style from '../GetResturant/GetResturant.module.scss'
 import { Link } from "react-router-dom";
-import style from './GetResturant.module.scss'
-
-const AllRestaurant = ({ posts, loading }) => {
+const Posts = ({ posts, loading }) => {
+    if (loading) {
+        return <h2>post</h2>;
+    }
 
     return (
-        <>
-            <section className={style.list}>
-                {/* mapper vores array(api) */}
-                {posts.map(apiData => (
+        <ul >
+            {posts.map(apiData => (
+                <li key={apiData.id} >
                     <figure key={apiData.id}>
                         <img src={`http://localhost:1337${apiData.attributes.Images.data[0].attributes.url}`} alt={apiData.Name} className={style.images} />
                         <figcaption>
@@ -29,11 +31,11 @@ const AllRestaurant = ({ posts, loading }) => {
 
                         </figcaption>
                     </figure>
-                ))}
-            </section>
 
-
-        </>
+                </li>
+            ))}
+        </ul>
     );
 };
-export default AllRestaurant
+
+export default Posts;
