@@ -1,0 +1,20 @@
+@import '../../../assets/Helpers/mixin';
+@import '../../../assets/Helpers/variabler';
+
+
+button {
+    background-color: $main-color;
+    width: 10%;
+    margin-bottom: 5%;
+    color: #fff;
+    border: none;
+    padding: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
