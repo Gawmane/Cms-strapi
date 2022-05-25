@@ -1,5 +1,25 @@
 @import '../../../assets/Helpers/mixin';
 @import '../../../assets//Helpers//variabler';
+
 h2 {
     @include headers();
+}
+
+.feedback {
+    background-color: $lightGreen;
+    margin: 0 -0.5em 0 -1em;
+
+    .FeedbackSort {
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        div {
+            padding: 5em;
+            width: 50%;
+        }
+    }
 }

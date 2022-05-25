@@ -1,12 +1,37 @@
 @import '../../../assets/Helpers/mixin';
 @import '../../../assets/Helpers/variabler';
+
 footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     margin: 0 -0.5em -1em -0.5em;
     height: 30vh;
     background-color: $text;
     color: #fff;
+
+
+
+    p {
+
+        &:hover {
+            color: $hover;
+        }
+    }
+
+    a {
+        color: #fff;
+        padding-right: 1em;
+        font-size: 1.5em;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+
     img {
         width: 5vw;
     }
